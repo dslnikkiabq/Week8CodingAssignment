@@ -1,25 +1,26 @@
 
 html {
     font-family: Calibri, 'Trebuchet MS', sans-serif;
-    background: linear-gradient(180deg, #84daf5, rgb(178, 66, 21), #affffa, #ffffff);
+    background: linear-gradient(180deg, #84daf5, #89ffff, #affffa, #ffffff);
   }
 
   body {
-    margin-top: 20rem;
-    margin-bottom: 20rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
   
   h1 {
     text-align: center;
-    filter: drop-shadow(20px 20px 10px #1707cb);
+    filter: drop-shadow(2px 20px 2px #1707cb);
     justify-content: center;
 
   }
   h2 {
-    margin: 4rem auto 1rem auto;
+    margin: 4rem 1rem ;
     text-align: center;
+    justify-content: center;    
     
   }
 
@@ -31,20 +32,42 @@ html {
   p,
   li {
         font-size: 20px;
+        flex-wrap: wrap;
+  }
+  ul {
+        font-size: 20px;
+        justify-content: center;
+        flex-wrap: nowrap;
+
 
   }
+
   ol {
-    padding: 20px;
+    padding: 5px;
+    justify-content: center; 
+    font-size: 20px;
+    flex-wrap: nowrap;
   }
   
   ol li {
-    padding: 10px 0;
+    padding: 5px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   img {
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, .5);
-      }
+    justify-content: center;
+    
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+    
   figcaption {
     text-align: center;
     font-weight: bold;
@@ -58,10 +81,37 @@ html {
   /* ---CUSTOM CLASS NAME SELECTORS--- */
   
 
+  
   .img-div {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
+  }
+
+  img {
+    float: left;
+    width:  500px;
+    height: 500px;
+    object-fit: scale-down;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+  .menu-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align: center;
+
+  }
+  .menu2-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    
   }
   
   .tips-div {
